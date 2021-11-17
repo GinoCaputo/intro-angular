@@ -6,9 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { Clase01Component } from './clases/clase01/clase01.component';
-import { ClassOneComponent } from './clases/class-one/class-one.component';
 @NgModule({
-  declarations: [AppComponent, HeroesComponent, Clase01Component, ClassOneComponent],
+  declarations: [AppComponent, HeroesComponent, Clase01Component],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
