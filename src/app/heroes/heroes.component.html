@@ -8,16 +8,21 @@
 
 <p class="parrafo">{{ numero > 600 }}</p>
 
-<p class="persona">
-  Hola mundo yo soy {{ persona.name }} {{ persona.apellido }}
+<p [class]="clase" (click)="onClick()">
+  Hola mundo yo soy {{ persona.nombre | uppercase }}
+  {{ persona.apellido | lowercase }}
 </p>
 
-<header class="header">
+<input type="text" [(ngModel)]="value" />
+
+<header [class]="clase">
   <nav>
     <a href="http://"></a>
     <a href="http://"></a>
     <a href="http://"></a>
     <a href="http://"></a>
     <a href="http://"></a>
+
+    <!-- <-- Event binding y Property binding  / Two way data binding -->
   </nav>
 </header>
