@@ -1,1 +1,28 @@
-<p>clase01 works!</p>
+<ul>
+  <li>{{ frutas[0] }}</li>
+  <li>{{ frutas[1] }}</li>
+  <li>{{ frutas[2] }}</li>
+  <li>{{ frutas[3] }}</li>
+  <li>{{ frutas[4] }}</li>
+</ul>
+
+<p class="parrafo">{{ numero > 600 }}</p>
+
+<p [class]="clase" (click)="onClick()">
+  Hola mundo yo soy {{ persona.nombre | uppercase }}
+  {{ persona.apellido | lowercase }}
+</p>
+
+<input type="text" [(ngModel)]="value" />
+
+<header [class]="clase">
+  <nav>
+    <a href="http://"></a>
+    <a href="http://"></a>
+    <a href="http://"></a>
+    <a href="http://"></a>
+    <a href="http://"></a>
+
+    <!-- <-- Event binding y Property binding  / Two way data binding -->
+  </nav>
+</header>
